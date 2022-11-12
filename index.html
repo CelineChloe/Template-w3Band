@@ -94,8 +94,8 @@
                     <!-- End: Tickets -->
 
                     <!-- Places -->
-                    <div class="places-list">
-                        <div class="place-item">
+                    <div class="row places-list">
+                        <div class="col place-item">
                             <img src="./assets/img/places/NewYork.jpg" alt="NewYork" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">New York</h3>
@@ -136,15 +136,13 @@
                     <p class="section-sub-heading">Fan? Drop a note!s</p>
                 </div>
             <!-- End: CONTACT -->
-
         </div>
         <!-- Begin: Content -->
-
         <div id="footer"></div>
     </div>
 
     <div class="modal js-modal">
-        <div class="modal-container">
+        <div class="modal-container js-modal-container">
             <div class="js-modal-close">
                 <i class="ti-close"></i>
             </div>
@@ -182,6 +180,7 @@
 <script>
     const buyBtns = document.querySelectorAll(".js-buy-ticket");
     const modal = document.querySelector('.js-modal');
+    const modalContainer = document.querySelector('.js-modal-container')
     const modalClose = document.querySelector('.js-modal-close')
 
     const showBuyTickets = () => {
@@ -198,5 +197,10 @@
 
     modalClose.addEventListener('click', hideBuyTickets)
     modal.addEventListener('click', hideBuyTickets)
+
+    // Giải quyết vấn đề nổi bọt trong popover
+    modalContainer.addEventListener('click', function (event) {
+        event.stopPropagation();
+    })
 </script>
 </html>

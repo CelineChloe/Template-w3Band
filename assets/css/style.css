@@ -13,6 +13,21 @@
     color: #fff !important;
 }
 
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+/* .col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+} */
+
+.col-half {
+    width: 50%;
+}
+
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -257,11 +272,10 @@ html {
 
 /* Places */
 .places-list {
-    /* margin-top: 32px;
-    margin-left: -8px;
-    margin-right: -8px; */
-    margin: 32px -8px 0;
-    padding-bottom: 48px;
+    /* margin: 32px -8px 0; */
+    /* padding-bottom: 48px; */
+    margin-top: 32px;
+    margin-bottom: 48px;
 }
 
 .place-item {
