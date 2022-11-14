@@ -18,14 +18,22 @@
     margin-right: -8px;
 }
 
-/* .col {
+.col {
     float: left;
     padding-left: 8px;
     padding-right: 8px;
-} */
+}
+
+.col-full {
+    width: 100%;
+}
 
 .col-half {
     width: 50%;
+}
+
+.col-third {
+    width: 33.333%;
 }
 
 html {
